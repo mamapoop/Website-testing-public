@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Shoe Shop</title>
+    <link rel="stylesheet" href="shoewebdesign.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shoebonsci - Cart</h1>
+            <nav>
+                <ul>
+                    <li><a href="ShoesShop.html">Home</a></li>
+					<li><a href="Product.html">Products</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="Registration (Forms).html">Registration</a></li>
+                    <li><a href="cart.html">Cart</a></li> <!-- Current page is Cart -->
+                    <li><a href="Contacts.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button id="calculate-total" class="btn">Calculate Total</button>
+            <div id="total-price"></div>
+            <button id="go-to-receipt" class="btn">Go to Receipt</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shoebonsci. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Include JavaScript file -->
+    <script>
+        // Display cart items in the cart page
+        if (window.location.pathname.includes("cart.html")) {
+            renderCart();
+            document.getElementById('calculate-total').addEventListener('click', calculateTotal);
+            document.getElementById('go-to-receipt').addEventListener('click', () => {
+                window.location.href = 'receipt.html';
+            });
+        }
+    </script>
+</body>
+</html>

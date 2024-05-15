@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Shoe Shop</title>
+    <link rel="stylesheet" href="shoewebdesign.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shoebonsci - Registration</h1>
+            <nav>
+                <ul>
+                    <li><a href="ShoesShop.html">Home</a></li>
+					<li><a href="Product.html">Products</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="Registration (Forms).html">Registration</a></li><!-- Current page is Regform -->
+                    <li><a href="cart.html">Cart</a></li> 
+                    <li><a href="Contacts.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+	
+	<article>
+    <h1>Join the ShoeBonsci Revolution</h1>
+    <p>We invite you to explore our diverse collection and experience the ShoeBonsci difference. Step into a </p>
+	<p>world where fashion meets function, and innovation walks hand in hand with tradition. Whether you're </p>
+	<p>browsing our latest arrivals or seeking expert advice, our dedicated team is here to help you find your </p>
+	<p>perfect pair.</p>
+	<br>
+	<br>
+	<br>
+	 <div class="form-container">
+            <form id="registrationForm" onsubmit="FormSubmit(event)">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="shoesize">What's Your Shoe Size?</label>
+                <input type="text" id="shoesize" name="shoesize" required><br><br>
+                <label for="style">What's Your Preferred Style?</label>
+                <input type="text" id="style" name="style" required><br><br>
+                <p>Gender</p>
+                <div>
+                    <input type="radio" name="Gender" value="M" id="m" required>
+                    <label for="m">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="Gender" value="F" id="f" required>
+                    <label for="f">Female</label>
+                </div>
+                <br>
+                <p>Select your shoe size:</p>
+                <div>
+                    <input type="radio" name="size" value="XS" id="xs" required>
+                    <label for="xs">XS - 6</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="S" id="s" required>
+                    <label for="s">S - 7</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="M" id="m" required>
+                    <label for="m">M - 8</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="L" id="l" required>
+                    <label for="l">L - 9</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="XL" id="xl" required>
+                    <label for="xl">XL - 10</label>
+                </div>
+                <div>
+                    <input type="radio" name="size" value="XXL" id="xxl" required>
+                    <label for="xxl">XXL - 11</label>
+                </div>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+	</article>
+    
+	
+	<footer>
+        <div class="container">
+            <p>&copy; 2024 Shoebonsci. All rights reserved.</p>
+        </div>
+    </footer>
+	
+    <script src="script.js"></script> <!-- Include JavaScript file -->
+    
+</body>
+</html>
